@@ -64,7 +64,7 @@ var StockBillets = React.createClass({
         return (
             <div className="panel panel-info">
                 <div className="panel-heading">
-                    <h3 className="panel-title">{__("Stock de billets — Eusko disponibles pour le change")}</h3>
+                    <h3 className="panel-title">{__("Stock de billets — T!nda disponibles pour le change")}</h3>
                 </div>
                 <div className="panel-body">
                     <div className="row">
@@ -242,7 +242,7 @@ var CaisseEusko = React.createClass({
         return (
             <div className="panel panel-info">
                 <div className="panel-heading">
-                    <h3 className="panel-title">{__("Caisse eusko — Eusko des cotisations")}</h3>
+                    <h3 className="panel-title">{__("Caisse eusko — T!nda des cotisations")}</h3>
                 </div>
                 <div className="panel-body">
                     <div className="row">
@@ -284,7 +284,7 @@ var RetourEusko = React.createClass({
         return (
             <div className="panel panel-info">
                 <div className="panel-heading">
-                    <h3 className="panel-title">{__("Retours d'eusko — Eusko retournés pour être reconvertis en €")}</h3>
+                    <h3 className="panel-title">{__("Retours d'eusko — T!nda retournées pour être reconvertis en €")}</h3>
                 </div>
                 <div className="panel-body">
                     <div className="row">

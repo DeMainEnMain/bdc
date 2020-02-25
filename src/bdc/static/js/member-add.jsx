@@ -458,7 +458,7 @@ class MemberAddPage extends React.Component {
                             onChange={this.onLoginChange}
                             validations="isMemberIdEusko"
                             validationErrors={{
-                                isMemberIdEusko: __("Ceci n'est pas un N° adhérent Eusko valide.")
+                                isMemberIdEusko: __("Ceci n'est pas un N° adhérent T!nda valide.")
                             }}
                             elementWrapperClassName={[{'col-sm-9': false}, 'col-sm-6']}
                             required

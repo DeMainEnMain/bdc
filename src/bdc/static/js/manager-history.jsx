@@ -201,13 +201,13 @@ else if (window.location.pathname.toLowerCase().indexOf("caisse-euro") != -1)
 }
 else if (window.location.pathname.toLowerCase().indexOf("caisse-eusko") != -1)
 {
-    var pageTitle = __("Historique caisse Eusko")
+    var pageTitle = __("Historique caisse T!nda")
     var mode = 'caisse_eusko_bdc'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }
 else if (window.location.pathname.toLowerCase().indexOf("retour-eusko") != -1)
 {
-    var pageTitle = __("Historique retour Eusko")
+    var pageTitle = __("Historique retour T!nda")
     var mode = 'retours_d_eusko_bdc'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }

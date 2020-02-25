@@ -104,7 +104,7 @@ class MemberRetraitEuskoNumeriquePage extends React.Component {
                 }
                 else if (data.error == 'error-bureau-not-enough-money') {
                     this.refs.container.error(
-                        __("Vous n'avez pas assez d'eusko en stock pour réaliser cette opération."),
+                        __("Vous n'avez pas assez de T!nda en stock pour réaliser cette opération."),
                         "",
                         {
                             timeOut: 5000,
