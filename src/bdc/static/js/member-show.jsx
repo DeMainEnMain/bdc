@@ -90,14 +90,14 @@ const MemberShow = React.createClass({
                     var memberActionDepotCompte = (
                         <a href={"/members/depot-eusko-numerique/" + this.state.member.id}
                            className="btn btn-default">
-                            {__("Dépôt d'eusko sur le compte")}
+                            {__("Dépôt dépôt de T!nda sur le compte")}
                         </a>
                     )
 
                     var memberActionRetraitCompte = (
                         <a href={"/members/retrait-eusko-numerique/" + this.state.member.id}
                            className="btn btn-default col-sm-offset-1">
-                            {__("Retrait d'eusko du compte")}
+                            {__("Retrait de T!nda du compte")}
                         </a>
                     )
                 }

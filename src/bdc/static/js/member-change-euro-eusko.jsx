@@ -322,7 +322,7 @@ class MemberChangeEuroEuskoPage extends React.Component {
 // We use the same code for change billets and change numérique (except for POST url & page title)
 if (window.location.pathname.toLowerCase().indexOf("euro-eusko-numeriques") != -1) {
     var url = getAPIBaseURL + "change-euro-eusko-numeriques/"
-    var title = __("Change € - T1nda numériques")
+    var title = __("Change € - T!nda numériques")
 }
 else {
     var url = getAPIBaseURL + "change-euro-eusko/"

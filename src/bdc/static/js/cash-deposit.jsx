@@ -311,7 +311,7 @@ if (window.location.pathname.toLowerCase().indexOf("cash-deposit") != -1)
     var propMode = "cash-deposit"
     var propGetHistoryURL =  "accounts-history/?account_type=caisse_euro_bdc&filter=a_remettre_a_euskal_moneta"
     var propNextURL =  "/manager/history/caisse-euro"
-    var propTranslateTitle = __("Remise de monnaie à Euskal Moneta")
+    var propTranslateTitle = __("Remise de monnaie à De Main en Main")
     var propCurrency = '€'
 }
 else if (window.location.pathname.toLowerCase().indexOf("sortie-caisse-eusko") != -1)

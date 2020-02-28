@@ -270,7 +270,7 @@ class MemberSubscriptionPage extends React.Component {
         if (this.state.amountInvalid)
             var spanInvalidAmount = (
                 <span className="help-block has-error-value">
-                    {__("Montant personnalisé incorrect, choisissez un montant dans la liste ou un montant supérieur à 5 €/eusko.")}
+                    {__("Montant personnalisé incorrect, choisissez un montant dans la liste ou un montant supérieur à 5 €/T!nda.")}
                 </span>)
         else
             var spanInvalidAmount = null
@@ -321,10 +321,10 @@ class MemberSubscriptionPage extends React.Component {
                             value={this.state.amount}
                             label={__("Montant")}
                             options={[
-                                {value: '12', label: '12 €/eusko'},
-                                {value: '24', label: '24 €/eusko'},
-                                {value: '36', label: '36 €/eusko'},
-                                {value: '5', label: __("5 €/eusko (chômeurs, minima sociaux)")},
+                                {value: '12', label: '12 €/T!nda'},
+                                {value: '24', label: '24 €/T!nda'},
+                                {value: '36', label: '36 €/T!nda'},
+                                {value: '5', label: __("5 €/T!nda (chômeurs, minima sociaux)")},
                                 {value: 'customAmount', label: __("Autre montant")},
                             ]}
                             required
