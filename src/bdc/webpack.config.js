@@ -84,7 +84,7 @@ module.exports = Object.keys(languages).map(function(language)
 
         output: {
             // where you want your compiled bundle to be stored
-            path: '/assets/bundles/',
+            path: './assets/bundles/',
             // naming convention webpack should use for your files
             filename: 'js/'+ language + '.[name].js',
         },
