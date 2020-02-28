@@ -160,7 +160,7 @@ const MemberShow = React.createClass({
                     var memberActionRetraitCompte = (
                         <a href={"/members/retrait-eusko-numerique/" + this.state.member.id}
                            className="btn btn-default">
-                            {__("Retrait d'eusko du compte")}
+                            {__("Retrait de T!nda du compte")}
                         </a>
                     )
                 }
