@@ -1,5 +1,5 @@
 cd src/bdc/
-sudo pip3 install -r requirements.txt
+#sudo pip3 install -r requirements.txt # To be done only once on a given system...
 npm install
 ./node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --colors
 source ../../set_env.sh 
