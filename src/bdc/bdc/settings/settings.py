@@ -190,7 +190,7 @@ LANGUAGES = (
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    '/assets/',
+    #'/assets/',
     os.path.join(os.path.dirname(BASE_DIR), 'static'),
 )
 

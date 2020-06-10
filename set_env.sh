@@ -1,3 +1,7 @@
+export DATABASE_NAME=cde
+export DATABASE_USER=cde
+export DATABASE_PASSWORD=cde
+export DATABASE_HOST=localhost
 export API_PUBLIC_URL=http://localhost:8000
 export API_INTERNAL_URL=http://api:8000
 export DJANGO_DEBUG=True
