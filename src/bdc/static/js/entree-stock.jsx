@@ -191,6 +191,6 @@ ReactDOM.render(
 )
 
 ReactDOM.render(
-    <NavbarTitle title={__("Entrée stock BDC")} />,
+    <NavbarTitle title={__("Entrée stock")} />,
     document.getElementById('navbar-title')
 )

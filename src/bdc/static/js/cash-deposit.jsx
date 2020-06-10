@@ -320,7 +320,7 @@ else if (window.location.pathname.toLowerCase().indexOf("sortie-caisse-eusko") !
     var propMode =  "sortie-caisse-eusko"
     var propGetHistoryURL =  "accounts-history/?account_type=caisse_eusko_bdc&filter=a_remettre_a_euskal_moneta"
     var propNextURL =  "/manager/history/caisse-eusko"
-    var propTranslateTitle = __("Sortie caisse eusko")
+    var propTranslateTitle = __("Sortie caisse T!nda")
     var propCurrency = 'EUS'
 }
 else if (window.location.pathname.toLowerCase().indexOf("sortie-retour-eusko") != -1)
@@ -329,7 +329,7 @@ else if (window.location.pathname.toLowerCase().indexOf("sortie-retour-eusko") !
     var propMode =  "sortie-retour-eusko"
     var propGetHistoryURL =  "accounts-history/?account_type=retours_d_eusko_bdc&filter=a_remettre_a_euskal_moneta"
     var propNextURL =  "/manager/history/retour-eusko"
-    var propTranslateTitle = __("Sortie retours d'eusko")
+    var propTranslateTitle = __("Sortie retours de T!nda")
     var propCurrency = 'EUS'
 }
 else

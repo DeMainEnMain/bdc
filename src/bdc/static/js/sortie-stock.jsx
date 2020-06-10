@@ -236,9 +236,9 @@ class SortieStockPage extends React.Component {
 }
 
 var propURL = getAPIBaseURL + "sortie-stock/"
-var propTitle = "Sortie stock BDC"
+var propTitle = "Sortie stock"
 var propTextareaDescription = "Sortie stock - " + window.config.userName + " - _"
-var propTranslateTitle = __("Sortie stock BDC")
+var propTranslateTitle = __("Sortie stock")
 var propTranslateButton = __("Enregistrer la sortie stock")
 
 ReactDOM.render(
