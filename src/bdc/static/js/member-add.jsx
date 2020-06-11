@@ -355,15 +355,6 @@ class MemberAddPage extends React.Component {
                             return {'label': __("Souhaite être informé des actualités liées à l'eusko"),
                                     'value': item == '1' ? __('Oui') : __('Non'), order: 12}
                             break
-                        case 'options_asso_saisie_libre':
-                            return {'label': __('Choix Association 3% #1'), 'value': item, order: 13}
-                            break
-                        case 'fk_asso':
-                            return {'label': __('Choix Association 3% #1'), 'value': this.state.fkAsso.label, order: 13}
-                            break;
-                        case 'fk_asso2':
-                            return {'label': __('Choix Association 3% #2'), 'value': this.state.fkAsso2.label, order: 14}
-                            break;
                         default:
                             return {'label': item, 'value': item, order: 999}
                             break;
@@ -661,51 +652,6 @@ class MemberAddPage extends React.Component {
                             elementWrapperClassName={[{'col-sm-9': false}, 'col-sm-6']}
                             required
                         />
-                        <div className="form-group row">
-                            <label
-                                className="control-label col-sm-3"
-                                data-required="true"
-                                htmlFor="memberaddform-asso">
-                                {__("Choix Association 3% #1")}
-                            </label>
-                            <div className="col-sm-6 memberaddform" data-eusko="memberaddform-asso">
-                                <SimpleSelect
-                                    ref="select"
-                                    value={this.state.fkAsso}
-                                    options={this.state.fkAssoAllList}
-                                    placeholder={__("Choix Association 3% #1")}
-                                    theme="bootstrap3"
-                                    createFromSearch={SelectizeUtils.selectizeCreateFromSearch}
-                                    onValueChange={this.fkAssoOnValueChange}
-                                    renderValue={SelectizeUtils.selectizeRenderValue}
-                                    renderOption={SelectizeUtils.selectizeNewRenderOption}
-                                    onBlur={this.validateFormOnBlur}
-                                    renderNoResultsFound={SelectizeUtils.selectizeNoResultsFound}
-                                />
-                            </div>
-                        </div>
-                        <div className="form-group row">
-                            <label
-                                className="control-label col-sm-3"
-                                data-required="true"
-                                htmlFor="memberaddform-asso2">
-                                {__("Choix Association 3% #2")}
-                            </label>
-                            <div className="col-sm-6 memberaddform" data-eusko="memberaddform-asso2">
-                                <SimpleSelect
-                                    ref="select"
-                                    value={this.state.fkAsso2}
-                                    options={this.state.fkAssoApprovedList}
-                                    placeholder={__("Choix Association 3% #2")}
-                                    theme="bootstrap3"
-                                    onValueChange={this.fkAsso2OnValueChange}
-                                    renderOption={SelectizeUtils.selectizeRenderOption}
-                                    renderValue={SelectizeUtils.selectizeRenderValue}
-                                    onBlur={this.validateFormOnBlur}
-                                    renderNoResultsFound={SelectizeUtils.selectizeNoResultsFound}
-                                />
-                            </div>
-                        </div>
                     </fieldset>
                     <fieldset>
                         <Row layout="horizontal">
