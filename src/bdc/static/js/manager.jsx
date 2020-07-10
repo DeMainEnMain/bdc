@@ -18,16 +18,16 @@ class Manager extends React.Component {
         }
 
         // Get Accounts Summaries:
-        // Stock de billets: stock_de_billets_bdc
-        // Caisse euros: caisse_euro_bdc
-        // Caisse eusko: caisse_eusko_bdc
-        // Retour eusko: retours_d_eusko_bdc
+        // Stock de billets: lcy_stock_cash_register
+        // Caisse euros: euro_cash_register
+        // Caisse eusko: lcy_cash_register
+        // Retour eusko: lcy_back_cash_register
         var computeManagerData = (data) => {
             this.setState({
-                stockBilletsData: _.filter(data, (item) => { return item.type.id == "stock_de_billets_bdc" })[0],
-                caisseEuroData: _.filter(data, (item) => { return item.type.id == "caisse_euro_bdc" })[0],
-                caisseEuskoData: _.filter(data, (item) => { return item.type.id == "caisse_eusko_bdc" })[0],
-                retourEuskoData: _.filter(data, (item) => { return item.type.id == "retours_d_eusko_bdc" })[0]
+                stockBilletsData: _.filter(data, (item) => { return item.type.id == "lcy_stock_cash_register" })[0],
+                caisseEuroData: _.filter(data, (item) => { return item.type.id == "euro_cash_register" })[0],
+                caisseEuskoData: _.filter(data, (item) => { return item.type.id == "lcy_cash_register" })[0],
+                retourEuskoData: _.filter(data, (item) => { return item.type.id == "lcy_back_cash_register" })[0]
             })
         }
         fetchAuth(getAPIBaseURL + "accounts-summaries/", 'get', computeManagerData)

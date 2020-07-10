@@ -75,7 +75,7 @@ var ManagerHistoryPage = React.createClass({
             var currentSoldeLabel = null
 
         // Which buttons we need to display before the table
-        if (this.props.mode == 'stock_de_billets_bdc') {
+        if (this.props.mode == 'lcy_stock_cash_register') {
             var actionButtons = (
                 <div className="row margin-bottom">
                     <div className="col-md-offset-2 col-md-2 col-sm-4">
@@ -93,7 +93,7 @@ var ManagerHistoryPage = React.createClass({
                 </div>
             )
         }
-        else if (this.props.mode == 'caisse_euro_bdc') {
+        else if (this.props.mode == 'euro_cash_register') {
             var actionButtons = (
                 <div className="row margin-bottom">
                     <div className="col-md-offset-2 col-md-2 col-sm-4">
@@ -111,7 +111,7 @@ var ManagerHistoryPage = React.createClass({
                 </div>
             )
         }
-        else if (this.props.mode == 'caisse_eusko_bdc') {
+        else if (this.props.mode == 'lcy_cash_register') {
             var actionButtons = (
                 <div className="row margin-bottom">
                     <div className="col-md-offset-2 col-md-2 col-sm-4">
@@ -126,7 +126,7 @@ var ManagerHistoryPage = React.createClass({
                 </div>
             )
         }
-        else if (this.props.mode == 'retours_d_eusko_bdc') {
+        else if (this.props.mode == 'lcy_back_cash_register') {
             var actionButtons = (
                 <div className="row margin-bottom">
                     <div className="col-md-offset-2 col-md-2 col-sm-4">
@@ -190,25 +190,25 @@ var ManagerHistoryPage = React.createClass({
 if (window.location.pathname.toLowerCase().indexOf("stock-billets") != -1)
 {
     var pageTitle = __("Historique stock billets")
-    var mode = 'stock_de_billets_bdc'
+    var mode = 'lcy_stock_cash_register'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }
 else if (window.location.pathname.toLowerCase().indexOf("caisse-euro") != -1)
 {
     var pageTitle = __("Historique caisse Euro")
-    var mode = 'caisse_euro_bdc'
+    var mode = 'euro_cash_register'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }
 else if (window.location.pathname.toLowerCase().indexOf("caisse-eusko") != -1)
 {
     var pageTitle = __("Historique caisse T!nda")
-    var mode = 'caisse_eusko_bdc'
+    var mode = 'lcy_cash_register'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }
 else if (window.location.pathname.toLowerCase().indexOf("retour-eusko") != -1)
 {
     var pageTitle = __("Historique retour T!nda")
-    var mode = 'retours_d_eusko_bdc'
+    var mode = 'lcy_back_cash_register'
     var url = getAPIBaseURL + "change-euro-eusko/"
 }
 else
